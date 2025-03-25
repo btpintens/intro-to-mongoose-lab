@@ -1,0 +1,6 @@
+import mongoose from "mongoose";
+
+const customerModel = mongoose.Schema({
+    name: string,
+    age:number,
+})

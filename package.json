@@ -1,0 +1,26 @@
+{
+  "name": "intro-to-mongoose-lab",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/btpintens/intro-to-mongoose-lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/btpintens/intro-to-mongoose-lab/issues"
+  },
+  "homepage": "https://github.com/btpintens/intro-to-mongoose-lab#readme",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "mongoose": "^8.13.0",
+    "prompt-sync": "^4.2.0"
+  }
+}
