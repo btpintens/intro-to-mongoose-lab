@@ -3,7 +3,6 @@ import mongoose from 'mongoose';
 import "dotenv/config";
 const prompt = promptSync();
 
-// Define the customer schema and model
 const customerSchema = new mongoose.Schema({
     name: String,
     age: Number,
