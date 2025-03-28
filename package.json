@@ -17,10 +17,11 @@
     "url": "https://github.com/btpintens/intro-to-mongoose-lab/issues"
   },
   "homepage": "https://github.com/btpintens/intro-to-mongoose-lab#readme",
-  "description": "",
   "dependencies": {
     "dotenv": "^16.4.7",
     "mongoose": "^8.13.0",
     "prompt-sync": "^4.2.0"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
