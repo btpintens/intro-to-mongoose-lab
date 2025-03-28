@@ -17,13 +17,13 @@ async function createCustomer() {
     const age = prompt("Enter age: ");
     const customer = new Customer({ name, age });
     await customer.save();
-    console.log(`Customer ${name} added!`);
+        console.log(`Customer ${name} added!`);
 }
 
 // Function to view all customers
 async function getCustomers() {
     const customers = await Customer.find();
-    console.log("\n List of customers:");
+        console.log("\n List of customers:");
     customers.forEach(customer => {
         console.log(`- ${customer.name}, Age: ${customer.age}, ID: ${customer._id}`);
     });
@@ -32,7 +32,7 @@ async function getCustomers() {
 // Function to update a customer
 async function updateCustomer() {
     const customers = await Customer.find();
-    console.log("\n Customers:");
+        console.log("\n Customers:");
     customers.forEach(customer => {
         console.log(`${customer._id}: ${customer.name}, Age: ${customer.age}`);
     });
@@ -40,25 +40,25 @@ async function updateCustomer() {
     const name = prompt("Enter new name: ");
     const age = prompt("Enter new age: ");
     await Customer.findByIdAndUpdate(id, { name, age });
-    console.log("Customer updated!");
+        console.log("Customer updated!");
 }
 
 // Function to delete a customer
 async function deleteCustomer() {
     const customers = await Customer.find();
-    console.log("\n Customers:");
+        console.log("\n Customers:");
     customers.forEach(customer => {
         console.log(`${customer._id}: ${customer.name}, Age: ${customer.age}`);
     });
     const id = prompt("Enter ID of the customer you want to delete: ");
     await Customer.findByIdAndDelete(id);
-    console.log("Customer deleted.");
+        console.log("Customer deleted.");
 }
 
 // Main connection and menu loop
 const connect = async () => {
     await mongoose.connect(process.env.MONGODB_URI);
-    console.log("Welcome to the CRM");
+        console.log("Welcome to the CRM");
 
     let running = true;
 
@@ -89,7 +89,7 @@ const connect = async () => {
     }
 
     await mongoose.disconnect();
-    console.log("exiting...");
+        console.log("exiting...");
     process.exit();
 };
 
